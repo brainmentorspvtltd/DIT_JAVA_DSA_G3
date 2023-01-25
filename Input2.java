@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Input2 {
     public static void main(String[] args) throws Exception {
+       
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the Id");
         int id = scanner.nextInt(); // 1001 \n
