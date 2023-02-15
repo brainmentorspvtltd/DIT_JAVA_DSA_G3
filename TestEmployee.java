@@ -3,11 +3,16 @@ import java.util.Scanner;
 
 public class TestEmployee {
     public static void main(String[] args) {
-        MessageResourceBundleReader mr = new MessageResourceBundleReader();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("1. Hindi");
+        System.out.println("2. English");
+        int choice = scanner.nextInt();
+       
+        MessageResourceBundleReader mr = new MessageResourceBundleReader(choice);
         String ename = new String("Shashi");
        // System.out.println(ename.toString()); // ename.toString()
        System.out.println(ename);
-        Scanner scanner = new Scanner(System.in);
+        
        // System.out.println("Enter the Id");
        System.out.println(mr.getValue("input.id"));
         int id= scanner.nextInt(); // 1001 \n
